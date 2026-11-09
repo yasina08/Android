@@ -8,10 +8,10 @@ import android.widget.Button;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
-       Button button0,button1,button2,button3,button4,button5,button6,button7,button8,button9,buttonC,button10,buttonAdd,buttonSub,buttonMul,buttonDiv,buttonEql;
-       EditText result;
-       float mValueOne,mValueTwo;
-       boolean addition,subtract,multiplication,division;
+    Button button0,button1,button2,button3,button4,button5,button6,button7,button8,button9,buttonC,button10,buttonAdd,buttonSub,buttonMul,buttonDiv,buttonEql;
+    EditText result;
+    float mValueOne,mValueTwo;
+    boolean addition,subtract,multiplication,division;
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -176,11 +176,11 @@ public class MainActivity extends AppCompatActivity {
                     result.setText(" ");
                 }
                 else
-                    {
+                {
                     mValueOne=Float.parseFloat(result.getText()+" ");
                     division=true;
                     result.setText(null);
-                    }
+                }
             }
         });
         buttonC.setOnClickListener(new View.OnClickListener()
